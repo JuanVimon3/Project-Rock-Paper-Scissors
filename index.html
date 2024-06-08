@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <script src="index.js"></script>
     <div>
         <h1>Pick your choice</h1>
-        <button onclick="getHumanChoice('Rock')" id="Rock">Rock</button>
-        <button onclick="getHumanChoice('Paper')" id="Paper">Paper</button>
-        <button onclick="getHumanChoice('Scissors')" id="Scissors">Scissors</button>
+        <button onclick="playRound('Rock')" id="Rock">Rock</button>
+        <button onclick="playRound('Paper')" id="Paper">Paper</button>
+        <button onclick="playRound('Scissors')" id="Scissors">Scissors</button>
         <h1 id="human-choice">Your choice is:</h1>
     </div>
     <div>
         <h1 id="machine-choice">Machine's choice will appear here</h1>
+    </div>
+    <div>
+        <h1 id="winner">The winner is:</h1>
+    </div>
+    <div>
+        <h1 id="human-score">Human score is: 0</h1>
+        <h1 id="computer-score">Computer score is: 0</h1>
     </div>
 </body>
 </html>
