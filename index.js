@@ -48,6 +48,6 @@ const playRound = (humanChoice) => {
     document.getElementById('final-winner').innerText = `The final winner is: ${finalWinner}`
 };
 
-document.getElementById('resetButton').addEventListener('click', function() {
+document.getElementById('restart-button').addEventListener('click', function() {
     location.reload();
 });
