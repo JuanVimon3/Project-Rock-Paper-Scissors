@@ -36,7 +36,18 @@ const playRound = (humanChoice) => {
         computerScore += 1;
     }
 
+    let finalWinner = '';
+    if(humanScore === 5 || computerScore === 5){
+        finalWinner = humanScore === 5 ? 'Human' : 'Machine';
+        document.getElementById('restart-button'); 
+    }
+
     document.getElementById('winner').innerText = `The winner is: ${winner}`;
     document.getElementById('human-score').innerText = `Human score is: ${humanScore}`;
     document.getElementById('computer-score').innerText = `Computer score is: ${computerScore}`;
+    document.getElementById('final-winner').innerText = `The final winner is: ${finalWinner}`
 };
+
+document.getElementById('restart-button').addEventListener('click', function() {
+    location.reload();
+});
